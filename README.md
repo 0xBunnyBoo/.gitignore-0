@@ -1,1 +1,44 @@
-# .gitignore-0
+# directories
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+**/artifacts
+**/build
+**/cache
+**/coverage
+**/.coverage_artifacts
+**/.coverage_cache
+**/.coverage_contracts
+**/dist
+**/node_modules
+**/out
+**/output
+
+# files
+**/.DS_Store
+*.env
+*.log
+.pnp.*
+coverage.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lcov.info
+
+# types
+src/types/*
+!src/types/common.ts
+!src/types/Greeter.ts
+
+# factories
+!src/types/factories
+src/types/factories/*
+!src/types/factories/Greeter__factory.ts
+
+# Foundry
+cache/
+out/
+broadcast/
